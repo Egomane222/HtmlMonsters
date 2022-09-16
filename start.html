@@ -1,0 +1,97 @@
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+  <style>
+    .header {
+      padding : 10px;
+
+      text-align: center;
+      background: #e18720;
+      color: white;
+      font-size: 20px;
+      float: center;
+      margin-left: 6px;
+      margin-right: 6px;
+      margin-top: 6px;
+      margin-bottom: 0px;
+      border: 8px solid black;
+    }
+
+    .center {
+      padding :10px;
+      margin-left: 6px;
+      margin-right: 6px;
+      background: #4cbee0;
+      color: black;
+      font-size: 18px;
+      float: center;
+      margin: 6px;
+      border: 4px solid rgb(32, 32, 32);
+    }
+
+    .h1center {
+      text-align: center;
+      font-size: 35px;
+
+    }
+
+    .p1center {
+      padding: 4px;
+      text-align: center;
+      font-size: 12px;
+
+    }
+  </style>
+
+<div class="header">
+  <div class="h1center"> Monsterspiel</div>
+</div>
+  
+  <div class="center">
+  <div style="font-size: 25;text-align: center;">
+  Spielbeschreibung:
+  </div>
+  Monster greifen im Wald an...
+  <br>
+  <br>
+  <br>
+  Erklär-Screenshots
+  <br>
+  </div>
+  
+  <div class="center">
+    <div style="font-size: 25;text-align: center;">
+      Einstellungen
+      </div>
+    <div style="margin-left: 6px; padding-top:8px;width: 100%; display: table;">
+      <div style=" display: table-row ;text-align: center;">
+        <div style="display: table-cell; text-align: right;">
+          <label>Spielfeldgröße</label>
+          <br>
+          <label>Bäume</label>
+          <br>
+          <label>Monster</label>
+        </div>
+        <div style="padding-left: 8px; text-align: left; display: table-cell;">
+          <form method="POST" action="/game">
+            <input type="number" name="groesse">
+            <br>
+            <input type="number" name="baum">
+            <br>
+            <input type="number" name="monster">
+            <br>
+            <br>
+            <input type="submit" value="Spielen!">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
